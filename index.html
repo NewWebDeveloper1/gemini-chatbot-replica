@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Importing Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+    />
+
+    <title>Gemini | Chatbot</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Application header -->
+      <header class="app-header">
+        <h1 class="heading">Hello there,</h1>
+        <h2 class="sub-heading">How can i help you?</h2>
+      </header>
+
+      <!-- Suggestion List -->
+      <ul class="suggestions">
+        <li class="suggested-item">
+          <p class="text">
+            Design a home office setup for remote work under $500.
+          </p>
+          <span class="material-symbols-rounded">draw</span>
+        </li>
+        <li class="suggested-item">
+          <p class="text">
+            How can i level up my web development skills 2025 ?
+          </p>
+          <span class="material-symbols-rounded">lightbulb</span>
+        </li>
+        <li class="suggested-item">
+          <p class="text">Suggest some tools for debugging JavaScript code.</p>
+          <span class="material-symbols-rounded">explore</span>
+        </li>
+        <li class="suggested-item">
+          <p class="text">
+            Create a React Js component for the simple todo list.
+          </p>
+          <span class="material-symbols-rounded">code_blocks</span>
+        </li>
+      </ul>
+
+      <div class="chats-container"></div>
+
+      <!-- prompt handler -->
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input
+              class="prompt-input"
+              type="text"
+              placeholder="Ask Gemini..."
+              required
+            />
+            <div class="prompt-actions">
+              <div class="file-upload-wrapper">
+                <img
+                  class="image-preview"
+                  src="./assets/images/testing-img.jpg"
+                  alt=""
+                />
+                <input
+                  type="file"
+                  accept="image/*, .pdf, .txt, .csv "
+                  id="file-input"
+                  hidden
+                />
+                <button
+                  class="material-symbols-rounded file-icon"
+                  type="button"
+                >
+                  description
+                </button>
+                <button
+                  id="add-file-btn"
+                  class="material-symbols-rounded"
+                  type="button"
+                >
+                  attach_file
+                </button>
+                <button
+                  id="cancel-file-btn"
+                  class="material-symbols-rounded"
+                  type="button"
+                >
+                  close
+                </button>
+              </div>
+
+              <button
+                id="stop-response-btn"
+                class="material-symbols-rounded"
+                type="button"
+              >
+                stop_circle
+              </button>
+              <button
+                id="send-prompt-btn"
+                class="material-symbols-rounded"
+                type="submit"
+              >
+                arrow_upward
+              </button>
+            </div>
+          </form>
+          <button
+            id="toggle-theme-btn"
+            class="material-symbols-rounded"
+            type="button"
+          >
+            light_mode
+          </button>
+          <button
+            id="delete-chat-btn"
+            class="material-symbols-rounded"
+            type="button"
+          >
+            delete
+          </button>
+        </div>
+
+        <p class="disclaimer-text">
+          Gemini can make mistakes, so double-check it.
+        </p>
+      </div>
+    </div>
+
+    <!-- Adding script.js -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
