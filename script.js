@@ -7,7 +7,7 @@ const fileWrapper = promptForm.querySelector(".file-upload-wrapper");
 const deleteChatButton = document.querySelector("#delete-chat-btn");
 const themeToggleBtn = document.querySelector("#toggle-theme-btn");
 
-const GEMINI_API_URL = `http://localhost:8000/api/chat`;
+const GEMINI_API_URL = `https://gemini-chatbot-server.vercel.app/`;
 
 let typingInterval, controller;
 let userData = { message: "", file: {} };
